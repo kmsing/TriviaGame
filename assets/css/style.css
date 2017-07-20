@@ -12,3 +12,10 @@ body{
     background-image: url('http://www.telegraph.co.uk/content/dam/food-and-drink/2017/01/04/coffeeS006G8_wwwAlamycom_Heart-shaped-coffee-art-on-a-latte-large_trans_NvBQzQNjv4BqR_FQDdnmU7vaPRO-RWliQLmGWWpIYa8XMAaoKOBoYS8.jpg');
 
   }
+
+  .questions{
+  	background-color: #E0C9AD;
+  	opacity: 0.75;
+  	right: 40px;
+
+  }

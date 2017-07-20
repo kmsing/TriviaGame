@@ -4,13 +4,7 @@ var actualchoices=new Array()
 document.cookie="ready=yes"
 var totalquestions=5
 
-var timeleft = 20;
-var downloadTimer = setInterval(function(){
-	timeleft--;
-	document.getElementById("countdowntimer").textContent = timeleft;
-	if(timeleft <= 0)
-	clearInterval(downloadTimer);
-	},1000);
+
 
 //solutions to each question
 var correctchoices=new Array()

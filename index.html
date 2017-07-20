@@ -2,20 +2,28 @@
 
 <head>
 <title>Coffee Quiz</title>
-<script src="quizconfig.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 <font face="Arial"><big><big>K's Crazy Coffee Quiz</big></big></font></p>
 
 <p> Game Time Countdown:  <span id="countdowntimer">10 </span> Seconds</p>
-
+<script>
+	var timeleft = 20;
+	var downloadTimer = setInterval(function(){
+	timeleft--;
+	document.getElementById("countdowntimer").textContent = timeleft;
+	if(timeleft <= 0)
+	clearInterval(downloadTimer);
+	},1000);
+</script>
 
 <p align="center">
 
 <form method="POST" name="myquiz">
 
-<img src="assets/images/coffee.jpg" alt="coffee" style="width:350px;height:228px;">
-
+<!--<img src="assets/images/coffee.jpg" alt="coffee" style="width:350px;height:228px;">-->
+<div class = "questions">
 <div class="qheader">
 1. Espresso literally means: </div>
 <div class="qselections">
@@ -70,7 +78,7 @@
 </div>
 
 <br>
-
+</div>
 </form>
 
 <form>
